@@ -1,54 +1,52 @@
-# DayZ Key Bindings Movement
+# DayZ Movement Key Bindings
 
-## Descrição
+## Description
 
-Script em AutoHotkey v2 que automatiza comandos de movimentação, corrida e inclinação no DayZ.
+An AutoHotkey v2 script that automates movement, sprinting, and leaning commands in DayZ.
 
-## Requisitos
+## Requirements
 
 - Windows.
 - AutoHotkey v2.
-- DayZ em execução e em foco.
+- DayZ must be running and in focus.
 
-## Funcionalidades
+## Features
 
-- **Corrida automática:** mantém o personagem correndo ao ativar o macro.
-- **Controle do Shift:** permite ativar ou pausar o Shift durante a corrida.
-- **Inclinação com Q e E:** controla a inclinação manualmente ou pelo movimento horizontal do mouse.
-- **Modo de combate:** ativa a inclinação ao pressionar duas vezes A ou D em até 400 ms, mantendo o botão direito do mouse pressionado.
-- **Desativação automática:** o modo de combate é encerrado após 5 segundos de inatividade do temporizador.
-- **Parada rápida:** interrompe a corrida e libera as teclas controladas pelo macro.
+- **Auto-sprint:** Keeps your character sprinting when the macro is activated.
+- **Shift control:** Allows you to toggle or pause the Shift key while sprinting.
+- **Leaning (Q and E):** Control leaning manually or via horizontal mouse movement.
+- **Combat mode:** Activates leaning by double-pressing 'A' or 'D' (within 400ms) while holding the right mouse button.
+- **Automatic deactivation:** Combat mode ends after 5 seconds of inactivity.
+- **Quick stop:** Stops sprinting and releases all keys controlled by the macro.
 
-## Controles
+## Controls
 
-| Tecla | Função |
+| Key | Function |
 | --- | --- |
-| `Numpad +` ou `+` | Ativa a corrida automática |
-| `Numpad -`, `-` ou `Tab` | Desativa o macro e para a corrida |
-| `S` | Parada rápida |
-| `W` | Movimento normal para frente |
-| `Q` | Inclinação para a esquerda |
-| `E` | Inclinação para a direita |
-| `A` duas vezes + botão direito | Ativa o modo de combate para a esquerda |
-| `D` duas vezes + botão direito | Ativa o modo de combate para a direita |
+| `Numpad +` or `+` | Activates auto-sprint |
+| `Numpad -`, `-`, or `Tab` | Deactivates the macro and stops sprinting |
+| `S` | Quick stop |
+| `W` | Normal forward movement |
+| `Q` | Lean left |
+| `E` | Lean right |
+| Double-press `A` + Right-click | Activates combat mode (lean left) |
+| Double-press `D` + Right-click | Activates combat mode (lean right) |
 
-## Como executar
+## How to Run
 
-1. Instale o AutoHotkey v2.
-2. Salve o script com o nome `DayZ key bindings movement..ahk`.
-3. Execute o arquivo `.ahk`.
-4. Abra o DayZ e mantenha a janela do jogo em foco.
-5. Utilize as teclas descritas na tabela.
+1. Install AutoHotkey v2.
+2. Save the script as `DayZ key bindings movement.ahk`.
+3. Run the `.ahk` file.
+4. Open DayZ and ensure the game window is in focus.
+5. Use the keys described in the table above. ## Notes
 
-## Observações
+- The macro starts in a disabled state.
+- The automated shortcuts only function when DayZ is the active window (in focus).
+- Mouse monitoring controls leaning based on the horizontal position of the cursor.
+- Behavior may vary depending on your key binding settings and the version of the game.
 
-- O macro inicia desativado.
-- Os atalhos automatizados funcionam somente quando o DayZ está em foco.
-- O monitoramento do mouse controla a inclinação conforme a posição horizontal do cursor.
-- O comportamento pode variar conforme as configurações de teclas e a versão do jogo.
-
-## Arquivo principal
+## Main file
 
 `DayZ key bindings movement..ahk`
 
-Observação: o script usa `#HotIf WinActive("ahk_exe DayZ_x64.exe")` para restringir os atalhos ao jogo, mas o temporizador do mouse pode continuar executando fora dele.
+Note: The script uses `#HotIf WinActive("ahk_exe DayZ_x64.exe")` to restrict the shortcuts to the game; however, the mouse-monitoring timer may continue to run even when the game is not in focus.
