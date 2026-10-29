@@ -1,6 +1,6 @@
 # DayZ AutoHotkey Macro — Technical Documentation
 
-**Version:** AutoHotkey v2.0  
+**Version:** AutoHotkey v1.7  
 **Target Application:** DayZ (`DayZ_x64.exe`)  
 **Purpose:** Automated sprint control, Shift management, combat direction control, manual Q/E toggling, and automatic key-state cleanup.
 
