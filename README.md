@@ -216,3 +216,39 @@ Specify your preferred license before distributing this project publicly.
 **Language:** AutoHotkey v2.0  
 **Platform:** Windows  
 **Purpose:** Movement automation, combat leaning control, and mouse aim compensation.
+
+Adicione esta seção à documentação do GitHub, em inglês, preferencialmente depois de Important Notes:
+
+## ⚠️ Important Gameplay Warnings and Limitations
+
+This macro may interfere with certain in-game activities due to its automatic and persistent leaning animation.
+
+### Building and Construction
+
+While the combat leaning mode is active, the character may maintain a continuous leaning animation. This can interfere with construction interactions, potentially canceling or preventing certain building actions.
+
+**Recommended solution:**
+
+- Cancel the active leaning animation before starting construction.
+- Alternatively, temporarily disable the macro during building activities.
+
+### Vehicle Driving
+
+Be careful when entering or driving vehicles.
+
+The `Q` and `E` keys are also used for vehicle controls. Since the macro automates these keys for combat leaning, it may interfere with vehicle steering and negatively affect driving control.
+
+**Recommended solution:**
+
+- Disable the macro before driving whenever necessary.
+- Make sure the combat leaning animation is canceled before operating a vehicle.
+
+### Other Possible Interferences
+
+Depending on the activity, game animations, and interaction requirements, other unexpected behaviors or input conflicts may occur.
+
+Always pay attention to the current game situation and disable the macro or cancel the active leaning animation whenever an activity requires normal character interactions.
+
+**General Recommendation:** Keep the macro disabled during activities that require precise interactions, especially construction and vehicle operation. Reactivate it when returning to normal combat and movement.
+
+Clarify how to cancel the animationMention possible input conflicts explicitly
